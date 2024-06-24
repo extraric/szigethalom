@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Szigethalom virtuális háztúra</title>
+		<link rel="stylesheet" href="/css/pannellum.css"/>
+		<script src="/js/pannellum.js"></script>
+		<link rel="stylesheet" href="/css/cam.css">
+	</head>
+	<body>
+
+	<div id="panorama">
+		<div id="minimap">
+			<div class="cam cam1"></div>
+			<div class="cam cam2"></div>
+			<div class="cam cam3"></div>
+			<div class="cam cam4"></div>
+			<div class="cam cam5"></div>
+			<div class="cam cam6"></div>
+			<div class="cam cam7"></div>
+			<div class="cam cam8"></div>
+		</div>
+	</div>
+
+	<script>
+	function loadJSON(url, callback) {  
+		var xobj = new XMLHttpRequest();
+			xobj.overrideMimeType("application/json");
+		xobj.open('GET', url, true);
+		xobj.onreadystatechange = function () {
+			  if (xobj.readyState == 4 && xobj.status == "200") {
+				callback(xobj.responseText);
+			  }
+		};
+		xobj.send(null);  
+	}
+
+	loadJSON("scenes.json", function(response) {
+	  // Parse JSON string into object
+		var myscenes = JSON.parse(response);
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
+		const cam = urlParams.get('cam');
+		switch(urlParams.get('cam')){
+			case "1": myscenes.default.firstScene="haloszoba"; break;
+			case "2": myscenes.default.firstScene="etkezo"; break;
+			case "3": myscenes.default.firstScene="gyerekszoba"; break;
+			case "4": myscenes.default.firstScene="szaletli"; break;
+			case "5": myscenes.default.firstScene="udvar"; break;
+			case "6": myscenes.default.firstScene="hatudvar"; break;
+			case "7": myscenes.default.firstScene="eloudvar"; break;
+			case "8": myscenes.default.firstScene="konyha"; break;
+		}
+		var viewer = pannellum.viewer('panorama', myscenes);
+		document.querySelectorAll('.cam').forEach(function(item){
+		  item.addEventListener('click', function(event){
+			if (event.target.classList.contains('cam1')){
+				viewer.loadScene('haloszoba');
+			}
+			if (event.target.classList.contains('cam2')){
+				viewer.loadScene('etkezo');
+			}
+			if (event.target.classList.contains('cam3')){
+				viewer.loadScene('gyerekszoba');
+			}
+			if (event.target.classList.contains('cam4')){
+				viewer.loadScene('szaletli');
+			}
+			if (event.target.classList.contains('cam5')){
+				viewer.loadScene('udvar');
+			}
+			if (event.target.classList.contains('cam6')){
+				viewer.loadScene('hatudvar');
+			}
+			if (event.target.classList.contains('cam7')){
+				viewer.loadScene('eloudvar');
+			}
+			if (event.target.classList.contains('cam8')){
+				viewer.loadScene('konyha');
+			}
+		  });
+		});
+	});
+	</script>
+
+	</body>
+</html>

@@ -1,0 +1,239 @@
+{   
+    "default": {
+        "firstScene": "szaletli",
+        "author": "Kovács Richárd",
+        "sceneFadeDuration": 1000,
+		"autoLoad": true,
+		"hotSpotDebug": true
+    },
+
+    "scenes": {
+        "szaletli": {
+            "title": "szaletli",
+            "hfov": 110,
+            "pitch": -0.7,
+            "yaw": -14,
+            "type": "equirectangular",
+            "panorama": "images/360_0024_Stitch_XHC.jpg",
+            "hotSpots": [
+                {
+                    "pitch": 0.2,
+                    "yaw": -54,
+                    "type": "scene",
+                    "text": "elő-udvar",
+                    "sceneId": "eloudvar"
+                },
+                {
+                    "pitch": -6.7,
+                    "yaw": 76.5,
+                    "type": "scene",
+                    "text": "hátsó udvar",
+                    "sceneId": "hatudvar"
+                },
+                {
+                    "pitch": -6.7,
+                    "yaw": 86.5,
+                    "type": "scene",
+                    "text": "udvar",
+                    "sceneId": "udvar"
+                },
+                {
+                    "pitch": 0.2,
+                    "yaw": -29,
+                    "type": "scene",
+                    "text": "konyha",
+                    "sceneId": "konyha"
+                }
+            ]
+        },
+
+        "eloudvar": {
+            "title": "elő-udvar",
+            "hfov": 110,
+            "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "images/360_0025_Stitch_XHC.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -4,
+                    "yaw": -281,
+                    "type": "scene",
+                    "text": "szaletli",
+                    "sceneId": "szaletli"
+                }
+            ]
+        },
+		
+		"hatudvar": {
+            "title": "hátsó udvar",
+            "hfov": 110,
+			"pitch": -1.5,
+            "yaw": 19,
+            "type": "equirectangular",
+            "panorama": "images/360_0023_Stitch_XHC.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -1.6,
+                    "yaw": -325,
+                    "type": "scene",
+                    "text": "szaletli",
+                    "sceneId": "szaletli"
+                },
+                {
+                    "pitch": -1.2,
+                    "yaw": 16,
+                    "type": "scene",
+                    "text": "udvar",
+                    "sceneId": "udvar"
+                }
+            ]
+        },
+        "udvar": {
+            "title": "udvar",
+            "hfov": 110,
+			"pitch": -1.5,
+            "yaw": -25,
+            "type": "equirectangular",
+            "panorama": "images/360_0022_Stitch_XHC.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -0.8,
+                    "yaw": 142,
+                    "type": "scene",
+                    "text": "szaletli",
+                    "sceneId": "szaletli"
+                },
+                {
+                    "pitch": -1.8,
+                    "yaw": -48.5,
+                    "type": "scene",
+                    "text": "hátsó udvar",
+                    "sceneId": "hatudvar"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": -197,
+                    "type": "scene",
+                    "text": "elő-udvar",
+                    "sceneId": "eloudvar"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": -184,
+                    "type": "scene",
+                    "text": "konyha",
+                    "sceneId": "konyha"
+                }
+            ]
+        },
+		
+		"konyha": {
+            "title": "konyha",
+            "hfov": 110,
+			"pitch": -5,
+            "yaw": 239,
+            "type": "equirectangular",
+            "panorama": "images/360_0043_Stitch_XHC.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -4.4,
+                    "yaw": 254,
+                    "type": "scene",
+                    "text": "étkező",
+                    "sceneId": "etkezo"
+                },
+				{
+                    "pitch": -5.7,
+                    "yaw": 177,
+                    "type": "scene",
+                    "text": "gyerekszoba",
+                    "sceneId": "gyerekszoba"
+                },
+				{
+                    "pitch": -5.3,
+                    "yaw": 227,
+                    "type": "scene",
+                    "text": "hálószoba",
+                    "sceneId": "haloszoba"
+                },
+				{
+                    "pitch": -7.7,
+                    "yaw": 148,
+                    "type": "scene",
+                    "text": "udvar",
+                    "sceneId": "szaletli"
+                }
+            ]
+        },
+		
+		"etkezo": {
+            "title": "étkező",
+            "hfov": 110,
+			"pitch": -13.6,
+            "yaw": -8.6,
+            "type": "equirectangular",
+            "panorama": "images/360_0018_Stitch_XHC.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -4.2,
+                    "yaw": -188,
+                    "type": "scene",
+                    "text": "konyha",
+                    "sceneId": "konyha"
+                },
+				{
+                    "pitch": -8.5,
+                    "yaw": 240,
+                    "type": "scene",
+                    "text": "hálószoba",
+                    "sceneId": "haloszoba"
+                },
+				{
+                    "pitch": -3.6,
+                    "yaw": -177,
+                    "type": "scene",
+                    "text": "szaletli",
+                    "sceneId": "szaletli"
+                }
+            ]
+        },
+		
+		"haloszoba": {
+            "title": "hálószoba",
+            "hfov": 110,
+			"pitch": -7,
+            "yaw": 72,
+            "type": "equirectangular",
+            "panorama": "images/360_0015_Stitch_XHC.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -6,
+                    "yaw": 112,
+                    "type": "scene",
+                    "text": "étkező",
+                    "sceneId": "etkezo"
+                }
+            ]
+        },
+		
+		"gyerekszoba": {
+            "title": "gyerekszoba",
+            "hfov": 110,
+			"pitch": -18.8,
+            "yaw": -37.5,
+            "type": "equirectangular",
+            "panorama": "images/360_0020_Stitch_XHC.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -9.8,
+                    "yaw": 19.5,
+                    "type": "scene",
+                    "text": "konyha",
+                    "sceneId": "konyha",
+                    "targetPitch": -8.12,
+                    "targetYaw": -13.44
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,132 @@
+.fsz-hotspot {
+    height: 120px;
+    width: 200px;
+    background: url("/images/thumb_80.jpg") center;
+    background-size: cover;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.pl-info {
+    border: 3px solid #71ceec;
+    background-position: 0px 160px;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 23px;
+    background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2226%22%20height%3D%22208%22%3E%0A%3Ccircle%20fill-opacity%3D%22.78%22%20cy%3D%22117%22%20cx%3D%2213%22%20r%3D%2211%22%20fill%3D%22%23fff%22%2F%3E%0A%3Ccircle%20fill-opacity%3D%22.78%22%20cy%3D%22143%22%20cx%3D%2213%22%20r%3D%2211%22%20fill%3D%22%23fff%22%2F%3E%0A%3Ccircle%20cy%3D%22169%22%20cx%3D%2213%22%20r%3D%227%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%222%22%2F%3E%0A%3Ccircle%20cy%3D%22195%22%20cx%3D%2213%22%20r%3D%227%22%20fill%3D%22none%22%20stroke%3D%22%23000%22%20stroke-width%3D%222%22%2F%3E%0A%3Ccircle%20cx%3D%2213%22%20cy%3D%22195%22%20r%3D%222.5%22%2F%3E%0A%3Cpath%20d%3D%22m5%2083v6h2v-4h4v-2zm10%200v2h4v4h2v-6zm-5%205v6h6v-6zm-5%205v6h6v-2h-4v-4zm14%200v4h-4v2h6v-6z%22%2F%3E%0A%3Cpath%20d%3D%22m13%20110a7%207%200%200%200%20-7%207%207%207%200%200%200%207%207%207%207%200%200%200%207%20-7%207%207%200%200%200%20-7%20-7zm-1%203h2v2h-2zm0%203h2v5h-2z%22%2F%3E%0A%3Cpath%20d%3D%22m5%2057v6h2v-4h4v-2zm10%200v2h4v4h2v-6zm-10%2010v6h6v-2h-4v-4zm14%200v4h-4v2h6v-6z%22%2F%3E%0A%3Cpath%20d%3D%22m17%2038v2h-8v-2z%22%2F%3E%0A%3Cpath%20d%3D%22m12%209v3h-3v2h3v3h2v-3h3v-2h-3v-3z%22%2F%3E%0A%3Cpath%20d%3D%22m13%20136-6.125%206.125h4.375v7.875h3.5v-7.875h4.375z%22%2F%3E%0A%3Cpath%20d%3D%22m10.428%20173.33v-5.77l5-2.89v5.77zm1-1.73%203-1.73-3.001-1.74z%22%2F%3E%0A%3C%2Fsvg%3E%0A);
+}
+.fsz0{
+    height: 60px;
+    width: 100px;
+    transition: width .5s, height .5s;
+}
+.fsz0:hover{
+    height: 120px;
+    width: 200px;
+}
+.fsz1{
+    background: url("/images/thumb_57.jpg");
+}
+.fsz2{
+    background-image: url("/images/thumb_58.jpg");
+}
+.fsz3{
+    background-image: url("/images/thumb_59.jpg");
+}
+.fsz4{
+    background-image: url("/images/thumb_60.jpg");
+}
+.fsz5{
+    background-image: url("/images/thumb_62.jpg");
+}
+.fsz6{
+    background-image: url("/images/thumb_63.jpg");
+}
+.fsz7{
+    background-image: url("/images/thumb_64.jpg");
+}
+.fsz8{
+    background-image: url("/images/thumb_70.jpg");
+}
+.fsz9{
+    background-image: url("/images/thumb_72.jpg");
+}
+.fsz10{
+    background: url("/images/thumb_80.jpg") bottom;
+}
+#fszhistory{
+    display: none;
+    position: absolute;
+    box-shadow: 7px 6px 14px 0px;
+    bottom: 5px;
+    left: 50%;
+    width: 80%;
+    max-width: 1100px;
+    max-height: 80%;
+    overflow-y: auto;
+    translate: -50%;
+    background: azure;
+    z-index: 2;
+    border: 1px solid #222;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    padding: 10px 20px 5px 10px;
+    justify-content: space-around;
+    align-content: start;
+    gap: 20px;
+}
+span#close {
+    top: 0;
+    right: 0px;
+    position: absolute;
+    padding: 6px;
+    background: #ccc;
+    cursor: pointer;
+}
+#panorama {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.pnlm-hotspot {
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    border-radius: 23px;
+    border: 3px solid #71ceec;
+}
+.pnlm-hotspot.pnlm-scene {
+    background-position: 0px 120px;
+}
+#minimap {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 2;
+    max-width: 300px;
+    max-height: 176px;
+    background: url("/images/alaprajz_kicsi.png");
+    background-size: contain;
+    width: 39vw;
+    height: 36vw;
+    border-radius: 5px;
+    background-color: #ffffff6e;
+}
+.cam {
+    position: absolute;
+    cursor: pointer;
+    color: #ed143d;
+}
+.cam:after{
+    content: "\25C9";
+}
+.cam1 {top:17%;left:30%;}
+.cam2 {top:17%;left:43%;}
+.cam3 {top:41%;left:30%;}
+.cam4 {bottom:13%;left:50%;}
+.cam5 {bottom:23%;right:15%;}
+.cam6 {top:47%;right:5%;}
+.cam7 {top:61%;left:11%;}
+.cam8 {top:30%;left:46%;}
