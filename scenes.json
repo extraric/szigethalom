@@ -4,7 +4,7 @@
         "author": "Kovács Richárd",
         "sceneFadeDuration": 1000,
 		"autoLoad": true,
-		"hotSpotDebug": true
+		"hotSpotDebug": false
     },
 
     "scenes": {
@@ -14,7 +14,7 @@
             "pitch": -0.7,
             "yaw": -14,
             "type": "equirectangular",
-            "panorama": "images/360_0024_Stitch_XHC.jpg",
+            "panorama": "images/360_0024_Stitch_XHC.JPG",
             "hotSpots": [
                 {
                     "pitch": 0.2,
@@ -52,7 +52,7 @@
             "hfov": 110,
             "yaw": 5,
             "type": "equirectangular",
-            "panorama": "images/360_0025_Stitch_XHC.jpg",
+            "panorama": "images/360_0025_Stitch_XHC.JPG",
             "hotSpots": [
                 {
                     "pitch": -4,
@@ -94,7 +94,7 @@
 			"pitch": -1.5,
             "yaw": -25,
             "type": "equirectangular",
-            "panorama": "images/360_0022_Stitch_XHC.jpg",
+            "panorama": "images/360_0022_Stitch_XHC.JPG",
             "hotSpots": [
                 {
                     "pitch": -0.8,
@@ -133,7 +133,7 @@
 			"pitch": -5,
             "yaw": 239,
             "type": "equirectangular",
-            "panorama": "images/360_0043_Stitch_XHC.jpg",
+            "panorama": "images/360_0043_Stitch_XHC.JPG",
             "hotSpots": [
                 {
                     "pitch": -4.4,
@@ -172,7 +172,7 @@
 			"pitch": -13.6,
             "yaw": -8.6,
             "type": "equirectangular",
-            "panorama": "images/360_0018_Stitch_XHC.jpg",
+            "panorama": "images/360_0018_Stitch_XHC.JPG",
             "hotSpots": [
                 {
                     "pitch": -4.2,
@@ -204,7 +204,7 @@
 			"pitch": -7,
             "yaw": 72,
             "type": "equirectangular",
-            "panorama": "images/360_0015_Stitch_XHC.jpg",
+            "panorama": "images/360_0015_Stitch_XHC.JPG",
             "hotSpots": [
                 {
                     "pitch": -6,
@@ -222,7 +222,7 @@
 			"pitch": -18.8,
             "yaw": -37.5,
             "type": "equirectangular",
-            "panorama": "images/360_0020_Stitch_XHC.jpg",
+            "panorama": "images/360_0020_Stitch_XHC.JPG",
             "hotSpots": [
                 {
                     "pitch": -9.8,
