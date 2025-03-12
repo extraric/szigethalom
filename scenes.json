@@ -70,7 +70,7 @@
 			"pitch": -1.5,
             "yaw": 19,
             "type": "equirectangular",
-            "panorama": "images/360_0023_Stitch_XHC.jpg",
+            "panorama": "images/360_0023_Stitch_XHC.JPG",
             "hotSpots": [
                 {
                     "pitch": -1.6,
